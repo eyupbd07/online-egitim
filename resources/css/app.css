@@ -1,0 +1,104 @@
+@import 'vuetify/styles';
+
+/* ========================================================================
+   GLOBAL GÖRÜNÜRLÜK VE RENK ZORLAMALARI (KURTARICI KODLAR)
+   ======================================================================== */
+
+/* Sayfa Arkaplanı ve Temel Yazı Rengi */
+body {
+    background-color: #f3f4f6 !important; /* Açık Gri Zemin */
+    color: #111827 !important; /* Koyu Siyah Yazı */
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* --- [YENİ EKLENDİ] MODAL PERDE DÜZELTMESİ --- */
+/* Modal açılınca ekranın simsiyah olmasını engeller, yarı şeffaf yapar */
+.v-overlay__scrim {
+    opacity: 0.5 !important;
+    background-color: #000 !important;
+}
+
+/* --- INPUT VE FORM ALANLARI (EN KRİTİK KISIM) --- */
+
+/* Inputların içindeki yazıları zorla SİYAH yap */
+input, 
+textarea, 
+select, 
+.v-field__input, 
+.v-select__selection-text, 
+.v-list-item__title {
+    color: #000000 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Placeholder (İpucu) yazılarını orta gri yap */
+input::placeholder,
+textarea::placeholder,
+.v-field__input::placeholder {
+    color: #6b7280 !important;
+    opacity: 0.8 !important;
+}
+
+/* Inputların arka planını BEYAZ yap ve Çerçeve Ekle */
+.v-field, .v-field__overlay {
+    background-color: #ffffff !important;
+    border-radius: 8px !important;
+}
+.v-field--variant-outlined .v-field__outline {
+    color: #9ca3af !important; /* Çerçeve Rengi */
+}
+
+/* --- KART VE UI TASARIMI --- */
+
+/* Kartların içini beyaz, kenarlarını belirgin yap */
+.v-card, .v-sheet {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+    border: 1px solid #e5e7eb !important;
+}
+
+/* Modal (Dialog) Arkaplanları */
+.v-dialog .v-card {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* --- BUTON VE İKONLAR --- */
+
+/* İkonların Genel Rengi */
+.v-icon {
+    opacity: 1 !important;
+}
+
+/* Düzenle (Kalem) - MAVİ */
+.mdi-pencil, .mdi-pencil-outline, .mdi-file-document-edit {
+    color: #2563eb !important;
+}
+
+/* Sil (Çöp) - KIRMIZI */
+.mdi-delete, .mdi-trash-can, .mdi-trash-can-outline {
+    color: #dc2626 !important;
+}
+
+/* Ekle (Artı) - YEŞİL */
+.mdi-plus, .mdi-plus-circle {
+    color: #16a34a !important; /* Yeşil */
+}
+/* Ama buton içindeyse Beyaz olsun */
+.v-btn--variant-elevated .mdi-plus {
+    color: #ffffff !important;
+}
+
+/* --- BAŞLIKLAR --- */
+h1, h2, h3, h4, h5, h6, .text-h5, .text-h6 {
+    color: #111827 !important;
+    font-weight: 700 !important;
+}
+
+/* --- LISTELER (Dropdownlar) --- */
+.v-list {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
