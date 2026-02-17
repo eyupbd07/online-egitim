@@ -22,6 +22,16 @@ Proje, temel LMS gereksinimlerini modern çözümlerle karşılar:
 * **📝 Quiz & Ödev:** Çoktan seçmeli sınav sistemi ve dosya yüklemeli ödev teslim modülü.
 * **👥 Rol Yönetimi:** Admin, Eğitmen ve Öğrenci için ayrıştırılmış özel yönetim panelleri.
 
+## 📂 Proje Yapısı (Önemli)
+
+Bu proje **Inertia.js** yapısını kullandığı için Frontend (Vue.js) dosyaları standart Laravel yapısından farklı bir konumdadır. Arayüz geliştirmeleri şu dizinde bulunur:
+
+`resources > js > Pages`
+
+* **Admin Paneli Sayfaları:** `resources/js/Pages/Admin`
+* **Öğrenci Paneli Sayfaları:** `resources/js/Pages/Student`
+* **Eğitmen Paneli Sayfaları:** `resources/js/Pages/Instructor`
+
 ## 🛠 Teknolojiler & Geliştirme Ortamı
 
 * **Geliştirme Ortamı:** XAMPP (Apache/MySQL)
